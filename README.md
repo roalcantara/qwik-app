@@ -1,12 +1,32 @@
-# Qwik City App ⚡️
+qwik-app
 
-- [Qwik Docs](https://qwik.builder.io/)
-- [Discord](https://qwik.builder.io/chat)
-- [Qwik GitHub](https://github.com/BuilderIO/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
+A simple [Qwik][10] demo app
 
----
+[![MIT license](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)][2]
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)][5]
+[![Editor Config](https://img.shields.io/badge/Editor%20Config-1.0.1-crimson.svg)][4]
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)][3]
+
+## Install
+
+  ```sh
+  git clone https://github.com/roalcantara/qwik-app
+  ```
+
+### Dependencies
+
+- [git][6]
+- [gitlint][7]
+- [pre-commit][8]
+- [pnpm][9]
+
+## Usage
+
+- `pnpm start` uses [Vite's development server][11] to server-side render (SSR) the output
+- `pnpm preview` creates a production build of the client modules and run a local server (a convenience to locally preview a production build)
+- `pnpm build` uses Typescript to run a type check on the source code and generates client and server modules
+- `pnpm qwik add` adds additional [integrations][12]
 
 ## Project Structure
 
@@ -30,36 +50,36 @@ Inside your project, you'll see the following directory structure:
 
 - `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
 
-## Add Integrations and deployment
+## Acknowledgements
 
-Use the `pnpm qwik add` command to add additional integrations. Some examples of integrations include: Cloudflare, Netlify or Express server, and the [Static Site Generator (SSG)](https://qwik.builder.io/qwikcity/guides/static-site-generation/).
+- [Standard Readme][5]
+- [Conventional Commits][7]
+- [Qwik][10]
+- [Vite][11]
+- [Unveiling Qwik 1.0][13]
 
-```shell
-pnpm qwik add # or `yarn qwik add`
-```
+## Contributing
 
-## Development
+- Bug reports and pull requests are welcome on [GitHub][0]
+- Do follow [Editor Config][4] rules.
+- Do follow [Git lint][7] rules.
+- Everyone interacting in the project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [Contributor Covenant][2] code of conduct.
 
-Development mode uses [Vite's development server](https://vitejs.dev/). During development, the `dev` command will server-side render (SSR) the output.
+## License
 
-```shell
-npm start # or `yarn start`
-```
+The project is available as open source under the terms of the [MIT][1] [License](LICENSE)
 
-> Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
-
-## Preview
-
-The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to locally preview a production build, and it should not be used as a production server.
-
-```shell
-pnpm preview # or `yarn preview`
-```
-
-## Production
-
-The production build will generate client and server modules by running both client and server build commands. Additionally, the build command will use Typescript to run a type check on the source code.
-
-```shell
-pnpm build # or `yarn build`
-```
+[0]: https://github.com/roalcantara/qwik-app
+[1]: https://opensource.org/licenses/MIT "Open Source Initiative"
+[2]: https://contributor-covenant.org "A Code of Conduct for Open Source Communities"
+[3]: https://conventionalcommits.org "Conventional Commits"
+[4]: https://editorconfig.org "EditorConfig"
+[5]: https://github.com/RichardLitt/standard-readme "Standard Readme"
+[6]: https://git-scm.com "Git"
+[7]: https://jorisroovers.com/gitlint "git commit message linter"
+[8]: https://pre-commit.com "A framework for managing and maintaining multi-language pre-commit hooks"
+[9]: https://pnpm.io "pnpm: Fast, disk space efficient package manager"
+[10]: https://qwik.io "Qwik"
+[11]: https://vitejs.dev "Vite"
+[12]: https://qwik.builder.io/qwikcity/guides/static-site-generation "Qwik Integrations and deployment"
+[13]: https://youtu.be/NjKOAbWqOM4 "Unveiling Qwik 1.0"
